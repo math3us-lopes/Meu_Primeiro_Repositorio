@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/*.container{
+    width:250px;
+    display: grid;
+    grid-template-columns: 10px 20px;
+    grid-row: 20px;
+}
+*/
+
+
+.topo{
+background-color: rgb(58, 213, 128);
+display: flex;
+justify-content: center;
+padding: auto;
+height: 5rem;
+width:7;
+
+}
+.menu{
+background-color: blue;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+align-items: flex-start;
+padding: auto;
+height: 3rem;
+}
+.conteudo{
+background-color: red;
+justify-content: flex-start;
+flex-direction: column;
+align-items: flex-start;
+padding: auto;
+height: 10px;
+width: 30px;
+}
+.rodape{
+background-color: green;
+justify-content: flex-start;
+flex-direction: column;
+align-items: flex-start;
+padding: auto;
+
+}

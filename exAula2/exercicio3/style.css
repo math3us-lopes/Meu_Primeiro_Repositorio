@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 390px;
+    display: grid;
+    grid-template-columns: 80px 250px 80px;
+    grid-gap: 10px;
+    grid-template-rows: 50px 200px 50px;
+}
+.header{
+    background-color: aquamarine;
+    grid-column: 1/4;
+}
+
+.left{
+    background-color: antiquewhite;
+
+}
+.center{
+    background-color: blue;
+}
+.right{
+    background-color: red;
+}
+.footer{
+    background-color: green;
+    grid-column: 1/4;
+}

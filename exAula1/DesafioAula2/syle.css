@@ -1,0 +1,135 @@
+#p{
+    padding: auto;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+     
+}
+
+ /*exercicio (A)*/
+#one,#four{
+    background-color: rgb(142, 253, 142);
+    width:12.6rem;
+    padding: 0.2rem;;
+    display: flex;
+    justify-content: center;   
+}
+#two{
+    background-color: rgb(21, 21, 255);
+    display: flex;
+    justify-content:center;
+     padding:0.3;
+    width:13rem;
+    
+}
+
+#three{
+    background-color: aquamarine;
+    display: flex;
+    padding:3rem;
+    align-items: center;
+    justify-content: center;
+    width:111px;
+
+}
+
+
+
+/*Exercicio (B)*/
+
+ body{
+    padding:0;
+    margin:0 ;
+    display:flex;
+    flex-direction: column;
+   
+ }
+
+ .one,.four{
+    background-color: lightgreen;
+    width: 13rem;
+    height:0.5rem;
+    color: white;
+    text-align: center;
+    padding: 0.54rem;;
+    display: flex;
+    justify-content: center;
+
+ }
+ .container{
+    display: flex;
+    flex-grow: 1px;
+    
+ }
+ .two{
+    background-color: blue;
+    padding:1rem;
+    height: 7rem;
+    width: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    
+    text-indent:-14px;
+    text-size-adjust: 20pt;
+    
+
+
+ }
+ .three{
+    background-color: aquamarine;
+
+    text-align: center;
+    display: flex;
+    justify-content:flex-start;
+    padding:3rem;
+    height: 3rem;
+    width: 5.1rem;
+    color: white;
+    
+ }
+
+/*Exercico (C)*/
+
+main{
+    padding:0;
+    margin:0 ;
+    display:flex;
+    flex-direction: column;
+}
+ .container1 {
+   display: flex;
+    
+    flex-grow: 1;
+ }
+
+ .topo,.rodape{
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 13rem;
+    padding:0.5rem;
+
+ }
+
+ .lateral,.lateral2{
+    background-color: blue;
+    padding: 0.5;
+    display: flex;
+    justify-content:flex-start;
+    height: 6rem;
+    width:3rem;
+    font-size:9pt;
+    
+ }
+
+ .conteudo{
+    background-color: aquamarine;
+    width: 4rem;
+    padding: 2rem;
+    height: 2rem;
+    display:flex;
+    justify-content:flex-start;
+    
+ }

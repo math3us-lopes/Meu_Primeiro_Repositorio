@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+body, ul, li, p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', Arial, sans-serif;
+ 
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 4fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.tedy, .sax, .nord, .asato {
+    width: 225px;
+    height: 225px;
+}
+
+.mat {
+    width: 220px;
+    height: 220px;
+    border-radius:50%; 
+}
+
+.life {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text {
+    padding: 1rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 24px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Arredonda as bordas do fieldset */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+     width: 80%;
+     padding: 10px;
+     border-radius: 10px;
+     border: ipx solid #ccc;
+     font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5); /* Deixa o checkbox menor */
+    margin-inline-end: 590px; /* Ajusta a posição */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}

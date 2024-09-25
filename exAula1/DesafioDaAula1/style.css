@@ -1,0 +1,48 @@
+.container{
+    margin:10px;
+    padding:0;
+    
+    display: flex;
+}
+
+.container div{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 100px;
+    width: 75fr 25fr;
+    
+     
+}
+.c1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(250, 81, 157);
+    border-radius: 20px;
+    font-size: 20px;
+    width: 150px;
+    padding: 30px;
+   
+}
+.c2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 134px;
+    font-size: 50px;
+    padding: 30px;
+    background-color: blueviolet;
+.c3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    border-radius: 20px;
+    width: 100px;
+    padding: 25px;
+    font-size: 50px;
+    color: antiquewhite;
+    flex-wrap: wrap;
+}

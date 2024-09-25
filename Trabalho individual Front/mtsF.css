@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    background-color: #444;
+    color: rgb(66, 253, 253);
+}
+body, ul, li, p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+    border-color: #1d1e20;
+    border:0;
+}
+
+.header,.footer{
+    background-color: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#banner {
+    color: greenyellow;
+    text-align: left;
+}
+
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("tricodando.png");
+}
+
+@media (max-width: 768px) {
+    .collection-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .collection-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: rgb(37, 54, 54);
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px rgb(74, 248, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    padding: 7px;
+}
+
+.card h1 {
+    font-size: 1rem;
+    color: rgb(118, 247, 204);
+}
+
+.card h2 {
+    font-size: 0.9rem;
+    color: greenyellow;
+}
+
+.card button {
+    background-color: rgb(120, 123, 121);
+    border: none;
+    border-radius: 11px;
+    color: rgb(192, 253, 101);
+    height: 30px;
+    width: 80%;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.life {
+    display: flex;
+    flex-direction:row;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text{
+    text-align: right;
+}
+
+ .image{
+    display:flex;
+    padding: 15px;
+           font-size: 100px;
+}
+
+
+.text {
+    padding: 1rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 24px;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}

@@ -1,0 +1,21 @@
+h1 img{
+    height: 10rem;
+    width: 20rem;
+    align-items: center;
+    vertical-align:baseline;
+    margin-left: 50pc;
+
+    }
+
+    body{
+        background-color: #000000;
+        color: aqua;
+        text-align:left;
+        text-transform: capitalize;
+    }
+  div{
+    text-align: left;
+   }
+   #po img{
+    text-align: center;
+   }
