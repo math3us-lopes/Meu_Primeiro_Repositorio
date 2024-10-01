@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Aprovação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Verificação de Aprovação</h1>
+    <p>Insira sua nota da prova:</p>
+    
+    <input type="number" id="nota" placeholder="Digite sua nota" min="0" max="100">
+    
+    <button onclick="verificarNota()">Verificar</button>
+    
+    <div id="resultado"></div>
+  </div>
+
+  <script>
+    function verificarNota() {
+      const nota = document.getElementById("nota").value;
+      const resultado = document.getElementById("resultado");
+
+      if (nota === "") {
+        resultado.innerHTML = "Por favor, insira uma nota válida.";
+        return;
+      }
+
+      const notaConvertida = parseFloat(nota);
+
+      if (isNaN(notaConvertida) || notaConvertida < 0 || notaConvertida > 100) {
+        resultado.innerHTML = "Por favor, insira uma nota entre 0 e 100.";
+        return;
+      }
+
+      if (notaConvertida >= 60) {
+        resultado.innerHTML = "<strong style='color: green;'>Aprovado!</strong>";
+      } else {
+        resultado.innerHTML = "<strong style='color: red;'>Reprovado!</strong>";
+      }
+    }
+  </script>
+
+</body>
+</html>

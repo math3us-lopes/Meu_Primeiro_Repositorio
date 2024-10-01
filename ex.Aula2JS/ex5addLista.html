@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        li.completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        button {
+            margin-left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .add-btn {
+            background-color: #2ecc71;
+        }
+        .add-btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <input type="text" id="itemInput" placeholder="Digite um item...">
+        <button class="add-btn" onclick="addItem()">Adicionar</button>
+        <ul id="shoppingList"></ul>
+    </div>
+
+    <script>
+        function addItem() {
+            const itemInput = document.getElementById("itemInput");
+            const itemText = itemInput.value.trim();
+
+            if (itemText === "") {
+                alert("Por favor, insira um item.");
+                return;
+            }
+
+            const listItem = document.createElement("li");
+
+            // Texto do item
+            const itemLabel = document.createElement("span");
+            itemLabel.textContent = itemText;
+            itemLabel.onclick = function() {
+                this.parentNode.classList.toggle("completed");
+            };
+            listItem.appendChild(itemLabel);
+
+            // Botão de remover
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Remover";
+            removeButton.onclick = function() {
+                this.parentNode.remove();
+            };
+            listItem.appendChild(removeButton);
+
+            // Adiciona o item à lista
+            const shoppingList = document.getElementById("shoppingList");
+            shoppingList.appendChild(listItem);
+
+            // Limpa o campo de entrada
+            itemInput.value = "";
+        }
+    </script>
+</body>
+</html>
